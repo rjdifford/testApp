@@ -5,6 +5,8 @@ void ofApp::setup(){
 
     ofBackground(0);
     ofSetLineWidth(1.5);
+    ofEnableSmoothing();
+    divider=25;
     
     
 }
@@ -19,12 +21,15 @@ void ofApp::draw(){
     
     ofSetColor(255,0,0);
 
-    ofDrawLine(0, 0, ofGetWidth(), ofGetHeight());
     
     
-    //for (int i=0;i<ofGetWidth();i++) {
+    float spacer=ofGetWidth()/divider;
+    
+    
+    for (float x=0;x<=ofGetWidth();x+=spacer) {
         
-    //}
+        ofDrawLine(0, 0, x, ofGetHeight());
+    }
 
 }
 
