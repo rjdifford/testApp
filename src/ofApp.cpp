@@ -30,6 +30,8 @@ void ofApp::draw(){
         
         ofDrawLine(0, 0, x, ofGetHeight());
     }
+    
+    ofDrawLine(ofGetWidth(),0,0,ofGetHeight());
 
 }
 
