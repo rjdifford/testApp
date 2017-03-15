@@ -29,12 +29,12 @@ void ofApp::draw(){
     for (float x=0;x<=ofGetWidth();x+=spacer) {
         
         ofDrawLine(0, 0, x, ofGetHeight());
+        ofDrawLine(ofGetWidth(),0,x,ofGetHeight());
     }
     
-    ofDrawLine(ofGetWidth(),0,0,ofGetHeight());
-    //comment test
-
-}
+    //ofDrawLine(ofGetWidth(),0,0,ofGetHeight());
+    
+    }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
