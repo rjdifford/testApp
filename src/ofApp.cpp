@@ -23,13 +23,14 @@ void ofApp::draw(){
 
     
     
-    float spacer=ofGetWidth()/divider;
+    float xSpacer=ofGetWidth()/divider;
+    float ySpacer=ofGetHeight()/divider;
+    float y=0;
     
-    
-    for (float x=0;x<=ofGetWidth();x+=spacer) {
+    for (float x=0;x<=ofGetWidth();x+=xSpacer) {
         
         ofDrawLine(0, 0, x, ofGetHeight());
-        ofDrawLine(ofGetWidth(),0,x,ofGetHeight());
+        //ofDrawLine(ofGetWidth(),0,x,ofGetHeight());
     }
     
     //ofDrawLine(ofGetWidth(),0,0,ofGetHeight());
