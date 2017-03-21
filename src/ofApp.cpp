@@ -27,11 +27,14 @@ void ofApp::draw(){
     float ySpacer=ofGetHeight()/divider;
     float y=0;
     
-    for (float x=0;x<=ofGetWidth();x+=xSpacer) {
+    for (int i=0;i<=divider;i++) {
         
-        ofDrawLine(0, 0, x, ofGetHeight());
-        //ofDrawLine(ofGetWidth(),0,x,ofGetHeight());
+        ofDrawLine(0, y, i*xSpacer,ofGetHeight());
+        ofDrawLine(ofGetWidth(),y,ofGetWidth()-(i*xSpacer),ofGetHeight());
+        y=y+ySpacer;
     }
+    
+    
     
     //ofDrawLine(ofGetWidth(),0,0,ofGetHeight());
     
